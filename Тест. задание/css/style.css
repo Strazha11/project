@@ -1,0 +1,489 @@
+@font-face {
+    font-family: "Montserrat";
+    /* Придумайте название для шрифта */
+    src: local("Montserrat-Regular"),
+        url("/font/Montserrat-Regular.woff2") format("woff2"),
+        /* Самые современные браузеры */
+        url("/font/Montserrat-Regular.woff") format('woff');
+    /* Современные браузеры */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SegoeUI";
+    /* Придумайте название для шрифта */
+    src: local("SegoeUI-Regular"),
+        url("/font/SegoeUI.woff2") format("woff2"),
+        /* Самые современные браузеры */
+        url("/font/SegoeUI.woff") format('woff');
+    /* Современные браузеры */
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    /* Придумайте название для шрифта */
+    src: local("SegoeUI-Bold"),
+        url("/font/SegoeUI-Bold.woff2") format("woff2"),
+        /* Самые современные браузеры */
+        url("/font/SegoeUI.woff") format('woff');
+    /* Современные браузеры */
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:focus-visible {
+    outline: 0;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Montserrat", "SegoeUI";
+    font-weight: 400;
+    font-size: 16px;
+    min-width: 320px;
+    color: black;
+    background-color: #131316;
+
+}
+
+.container {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 0 190px;
+    box-sizing: content-box;
+
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+/*****header*****/
+.header {
+    padding-bottom: 58px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 40px 0;
+}
+
+
+.header__button {
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 10px 8px 10px 8px;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.title__hero {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.header {
+    background: linear-gradient(to bottom, transparent, transparent), url('/img/image.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom 100% center;
+}
+
+.main__hero {
+    width: calc((100%-10px) /1);
+}
+
+.name__desc {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 180px;
+    color: #131316;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: 'Segoe UI';
+    line-height: 21px;
+}
+
+.name__desc-bottom {
+    max-width: 285px;
+    font-weight: 400;
+    color: #131316;
+    text-align: center;
+    line-height: 21px;
+    font-family: 'Segoe UI';
+    margin-bottom: 13px;
+
+}
+
+.main__list-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container__price {
+    display: flex;
+}
+
+.main__item-hero {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+
+}
+
+main {
+    background-color: #131316;
+}
+
+
+
+.btn--effects {
+    display: block;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 4px 0 6px 0px;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: white;
+    font-family: 'Segoe UI';
+}
+
+
+/*****ship__day*****/
+
+.container__ship-background {
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container__ship-day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 250px;
+    margin-bottom: 27px;
+    gap: 10px;
+
+
+
+}
+
+.image {
+    background-image: url(/img/Корабльднязi6.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ship__block {
+    flex: 1 1 calc((100% - 10px) / 2);
+}
+
+
+.spaceship {
+    margin-right: 4px;
+}
+
+.price__svg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 26px;
+    width: 79%;
+}
+
+.title__block {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.price {
+    margin: 0;
+}
+
+.ship__space-image {
+    margin-bottom: 11px;
+}
+
+.ship__title {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 6px;
+}
+
+
+.ship__descr {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 20px;
+    max-width: 295px;
+}
+
+.sailse__spaceshop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.sailse__promo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ship__sails {
+    width: 79%;
+}
+
+
+
+.sailse__eco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__now {
+    font-weight: 700;
+    font-size: 24px;
+    color: #131316;
+    margin: 0;
+}
+
+.sailse__spaceshop {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+
+
+.sailse__promo {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.container__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.picture__price {
+    margin-right: 39px;
+}
+
+.sailse__eco {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.sailse__price {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+
+
+.sailse {
+    margin-bottom: 7px;
+}
+
+.sailse__promocod {
+    margin-bottom: 5px;
+}
+
+.sailse__econom {
+    margin-bottom: 5px;
+}
+
+.sailse__price-color {
+    color: #FF0000;
+    font-family: 'Segoe UI';
+
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+.ship__button-link {
+    display: block;
+    border: 1px dashed #131316;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 18px 74px;
+    font-family: 'Segoe UI';
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+}
+
+.ship__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ship__button-link-two {
+
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 21px 91px;
+    background: linear-gradient(87.23deg, rgba(128, 26, 179, 0) -91.42%, #4C4CFF 99.79%);
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 0.06em;
+}
+
+
+
+/*****footer*****/
+
+footer {
+    padding-top: 63px;
+    padding-bottom: 25px;
+
+}
+
+.footer__title {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contacts {
+    font-family: 'Segoe UI';
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.contacts_tel-link {
+    font-family: 'Segoe UI';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.contacts_mail {
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.container__contacts-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.container__footer-top {
+    margin-bottom: 30px;
+}
